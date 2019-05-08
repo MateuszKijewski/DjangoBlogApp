@@ -1,0 +1,23 @@
+{% extends 'posts/base.html' %}
+{% load static %}
+
+{% block header %}
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static "posts/home_style.css" %}">
+{% endblock %}
+
+{% block active1 %}
+    class="active"
+{% endblock %}
+
+
+{% block content%}
+    <div class="main_text">
+        <p>Express<br>Yourself<br><span id="mySpan">Here</span></p>
+        <span>Blog App by Mateusz Kijewski</span>
+    </div>
+{% endblock %}
+
+{% block javascript%}
+    <script src="{% static "posts/switcher.js" %}"></script>
+{% endblock %}

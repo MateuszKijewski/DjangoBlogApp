@@ -1,0 +1,66 @@
+* {
+    font-family: Impact;
+}
+
+.container-fluid {
+    padding: 0px 0px 0px 0px !important;
+}
+
+.nav {
+    height: 12vh;
+    background-color: #2b3c50;
+}
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .container li {
+        list-style-type: none;
+        margin-right: 5px;
+        padding-right: 5px;
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+    }
+        .container li a {
+            text-decoration: none;
+            color: #e1c4b2;
+            transition: 0.2s linear;
+        }
+        .container li a:hover {
+            color: white;
+            font-size: 2.5rem;
+        }
+        .divider {
+            flex: 1;
+        }
+
+main {
+    background-image: url(graphics/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 84vh;
+}
+    .main_text {
+        position: absolute;
+        background-color: #2b3c50;
+        color: #e1c4b2;
+        margin-left: 36vw;
+        margin-top: 10vh;
+        padding: 30px 30px 30px 30px;
+    }
+        .main_text h1 {
+            color: #f1e2da;
+            letter-spacing: 2px;
+        }
+
+    .active {
+        color: white !important;
+        font-size: 2rem;
+    }
+footer {
+    text-align: center;
+    color: #e1c4b2;
+    height: 4vh;
+    background-color: #2b3c50;
+}

@@ -1,0 +1,27 @@
+{% extends 'posts/base.html' %}
+{% load static %}
+
+{% block header %}
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static "posts/about_style.css" %}">
+{% endblock %}
+
+{% block active2 %}
+    class="active"
+{% endblock %}
+
+{% block content%}
+    <div class="main_text">
+        <h1>Django Blog Application</h1>
+        <p>
+            Application created using Django, with basic back-end functionalities implemented,<br>
+            meant to be further developed with new functionalities and options.<br>
+            For now users are able to:<br>
+            - create an account,<br>
+            - log in,<br>
+            - post their blog posts containing photos and text,<br>
+            - view their posts.
+        </p>
+    </div>
+{% endblock %}
+

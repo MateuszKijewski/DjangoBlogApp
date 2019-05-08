@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block header %}
+    {% endblock %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="nav">
+           <ul class="container">
+              <li><a {% block active1 %}{% endblock %} href="{% url 'home' %}">Home</a></li>
+              <li><a {% block active2 %}{% endblock %} href="{% url 'about' %}">About</a></li>
+              <li class="divider"><a {% block active3 %}{% endblock %} href="{% url 'contact' %}">Contact</a></li>
+              <li><a {% block active4 %}{% endblock %} href="#">Register</a></li>
+              <li><a {% block active5 %}{% endblock %} href="#">Login</a></li>
+           </ul>
+        </div>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>
+                © DjangoBlogApp - Mateusz Kijewski
+        </footer>
+    </div>
+    {% block javascript %}
+    {% endblock %}
+</body>
+</html>

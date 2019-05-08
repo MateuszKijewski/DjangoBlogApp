@@ -1,0 +1,24 @@
+{% extends 'posts/base.html' %}
+{% load static %}
+
+{% block header %}
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static "posts/contact_style.css" %}">
+{% endblock %}
+
+{% block active3 %}
+    class="active"
+{% endblock %}
+
+
+{% block content%}
+    <div class="main_text">
+        <h1>Contact</h1>
+        <div>
+            <span>E-mail:</span> MateuszKijewski2307@gmail.com<br>
+            <span>GitHub:</span> github.com/MateuszKijewski<br>
+            <span>LinkedIn:</span> linkedin.com/in/mateusz-kijewski-a138a6172/
+        </div>
+    </div>
+{% endblock %}
+
